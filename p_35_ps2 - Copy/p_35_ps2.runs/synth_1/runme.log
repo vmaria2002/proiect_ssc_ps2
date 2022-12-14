@@ -1,0 +1,692 @@
+
+*** Running vivado
+    with args -log Nexys.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nexys.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Nexys.tcl -notrace
+Command: synth_design -top Nexys -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10600 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 282.629 ; gain = 73.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Nexys' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/Nexys.vhd:16]
+INFO: [Synth 8-3491] module 'ps2_transmiter' declared at 'D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/ps2_transmiter.vhd:6' bound to instance 'receptir' of component 'ps2_transmiter' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/Nexys.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'ps2_transmiter' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/ps2_transmiter.vhd:15]
+INFO: [Synth 8-3491] module 'ps2_receiver' declared at 'D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/ps2_receiver.vhd:8' bound to instance 'ps2_keyboard' of component 'ps2_receiver' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/ps2_transmiter.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'ps2_receiver' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/ps2_receiver.vhd:16]
+INFO: [Synth 8-3491] module 'Bistabil_D' declared at 'D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/bistabil_D.vhd:6' bound to instance 'bist_clk' of component 'Bistabil_D' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/ps2_receiver.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'Bistabil_D' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/bistabil_D.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Bistabil_D' (1#1) [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/bistabil_D.vhd:13]
+INFO: [Synth 8-3491] module 'Bistabil_D' declared at 'D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/bistabil_D.vhd:6' bound to instance 'bist_data' of component 'Bistabil_D' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/ps2_receiver.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'ps2_receiver' (2#1) [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/ps2_receiver.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ps2_transmiter' (3#1) [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/ps2_transmiter.vhd:15]
+INFO: [Synth 8-3491] module 'display_on_leds' declared at 'D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/SSD.vhd:6' bound to instance 'viz' of component 'display_on_leds' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/Nexys.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'display_on_leds' [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/SSD.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'display_on_leds' (4#1) [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/SSD.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Nexys' (5#1) [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/sources_1/new/Nexys.vhd:16]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[15]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[14]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[13]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[12]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[11]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[10]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[9]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[8]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[7]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[6]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[5]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[4]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[3]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[2]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 320.133 ; gain = 110.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 320.133 ; gain = 110.719
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17_B'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17_G'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED17_R'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[8]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[9]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA[10]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB[4]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB[7]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB[8]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB[9]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB[10]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC[4]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC[7]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC[8]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC[9]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC[10]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD[4]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD[7]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD[8]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD[9]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD[10]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XA_N[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XA_P[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XA_N[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XA_P[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XA_N[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XA_P[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XA_N[4]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'XA_P[4]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_R[0]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_R[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_R[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_R[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_G[0]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_G[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_G[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_G[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_B[0]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_B[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_B[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_B[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_RESET'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_CD'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:180]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:180]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_SCK'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_CMD'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_DAT[0]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_DAT[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_DAT[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SD_DAT[3]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_MISO'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_MOSI'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_SCLK'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_CSN'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[1]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[2]'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_SCL'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_SDA'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_INT'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_CT'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M_CLK'. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:208]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.srcs/constrs_1/imports/p_35_ps2/Nexis4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Nexys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 632.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "shift_l" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shift_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ascii" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "An" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---XORs : 
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	  27 Input      8 Bit        Muxes := 1     
+	  28 Input      8 Bit        Muxes := 1     
+	  22 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	  27 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  22 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Bistabil_D 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ps2_receiver 
+Detailed RTL Component Info : 
++---XORs : 
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module ps2_transmiter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  27 Input      8 Bit        Muxes := 1     
+	  28 Input      8 Bit        Muxes := 1     
+	  22 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	  27 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  22 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module display_on_leds 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "receptir/ascii" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[15]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[14]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[13]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[12]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[11]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[10]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[9]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[8]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[7]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[6]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[5]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[4]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[3]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[2]
+WARNING: [Synth 8-3331] design Nexys has unconnected port LED[1]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\receptir/ascii_new_reg )
+WARNING: [Synth 8-3332] Sequential element (receptir/ascii_new_reg) is unused and will be removed from module Nexys.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|display_on_leds | rom        | 256x8         | LUT            | 
+|Nexys           | Seg0       | 256x8         | LUT            | 
++----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:56 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     9|
+|3     |LUT1   |    34|
+|4     |LUT2   |    31|
+|5     |LUT3   |    11|
+|6     |LUT4   |     9|
+|7     |LUT5   |    18|
+|8     |LUT6   |   105|
+|9     |MUXF7  |    10|
+|10    |MUXF8  |     3|
+|11    |FDRE   |    90|
+|12    |FDSE   |     4|
+|13    |IBUF   |     4|
+|14    |OBUF   |    17|
+|15    |OBUFT  |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------+------+
+|      |Instance         |Module          |Cells |
++------+-----------------+----------------+------+
+|1     |top              |                |   361|
+|2     |  receptir       |ps2_transmiter  |   190|
+|3     |    ps2_keyboard |ps2_receiver    |   162|
+|4     |      bist_clk   |Bistabil_D      |     2|
+|5     |      bist_data  |Bistabil_D_0    |     1|
+|6     |  viz            |display_on_leds |   134|
++------+-----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 632.418 ; gain = 423.004
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 632.418 ; gain = 110.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 632.418 ; gain = 423.004
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 131 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:56 . Memory (MB): peak = 632.418 ; gain = 423.004
+INFO: [Common 17-1381] The checkpoint 'D:/An3/SSC/P_35/p_35_ps2 - Copy/p_35_ps2.runs/synth_1/Nexys.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 632.418 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 14 15:03:07 2022...
